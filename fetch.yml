@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Fetch file
+    fetch:
+      src: testing.txt
+      dest: testing_files/

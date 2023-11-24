@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Create an empty file
+    file:
+      path: testing_folder/empty_file.txt
+      state: touch

@@ -1,0 +1,23 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: ensure apache2 is started
+    ansible.builtin.service:
+      name: apache2
+      state: started
+   
+  - name: enabling the apache service and not touching the state
+    ansible.builtin.service:
+      name: apache2
+      enabled: yes
+
+  - name: restart service apache3, in all cases
+    ansible.builtin.service:
+      name: apache2
+      state: restarted
+
+
+    

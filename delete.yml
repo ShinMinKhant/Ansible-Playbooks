@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Delete an empty file
+    file:
+      path: testing_folder/empty_file.txt
+      state: absent
