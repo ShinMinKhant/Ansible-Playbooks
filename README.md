@@ -1,4 +1,4 @@
-# Basic-Ansible-Playbooks
+# Ansible-Playbooks
 
 File and Service Management using Ansible (University Group Project)
 
